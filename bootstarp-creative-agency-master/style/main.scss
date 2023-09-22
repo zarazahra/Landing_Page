@@ -1,0 +1,65 @@
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// VARIABLES
+$font-main: 'Montserrat', sans-serif;
+$color-main: #188ef4;
+$color-sub: #1dc9cb;
+$color-bg: #f4f8fa;
+$color-gradient: linear-gradient(90deg, #5eeebb, #51aafa);
+$text-primary: #444444;
+$text-sub: #8d97ad;
+$text-alter: #FFFFFF; 
+
+// SET UP
+body, *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-main;
+}
+
+.main{
+    position: relative;
+    overflow-x: hidden;
+    background: $color-bg;
+    z-index: 0;
+}
+
+section{
+    padding-bottom: 90px;
+}
+
+h2,h3,h4,h5{
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+h3,h2{
+    text-align: center;
+}
+
+
+a, ul, li{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: $text-primary
+}
+
+@import "./navbar";
+@import "./features";
+@import "./about";
+@import "./services";
+@import "./team";
+@import "./achiev";
+@import "./partners";
+@import "./clients";
+@import "./map";
+@import "./contact";
+@import "./footer";
+@import "./break-point";
+
+
+

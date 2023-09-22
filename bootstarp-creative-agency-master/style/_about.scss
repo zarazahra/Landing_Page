@@ -1,0 +1,40 @@
+.about{
+
+    &__details{
+
+         p{
+             color: $text-sub;
+         }
+    }
+
+    &__list{
+
+        li{
+            margin-bottom: 1rem;
+        }
+        
+        i{
+            color: $color-main;
+            margin: 4px 10px;
+        }
+    }
+
+    &__btn{
+
+        i{
+            position: relative;
+            opacity: 0;
+            font-size: inherit;
+            text-align: center;
+            transition: all .3s;
+            margin-left: -1.5rem;
+            padding-left: .5rem;
+        }
+
+        a:hover i{
+            margin-left: 5px;
+            padding-left: 0;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.navbar{
+    z-index: 99999;
+    transition: all .3s;
+    
+    &__scroll{
+        background: #FFFFFF;
+    }
+
+    &-brand{
+        font-weight: 400;
+    }
+
+    .nav-link{
+        margin: .667em 1.667em;
+        padding: 0!important;
+        color: $text-primary!important;
+    }
+
+    .dropdown-toggle::after{
+        margin-left: 0;
+    }
+
+    &-icon{
+
+        border: 2px solid $text-primary;
+        padding: .5rem;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin: .5rem .3rem;
+        cursor: pointer;
+        transition: all .3s;
+        a{ transition: all .3s; }
+        &:hover{
+            border: 2px solid $color-main;
+            a{
+                color: $color-main;
+            }
+        }
+    }
+}
